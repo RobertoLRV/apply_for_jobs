@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>{{ variavel }}</h1>
+  <p>Bem Vindo Usuario!</p>
+  <form action="{{url_for('index')}}" method="POST">
+    <label for="">Quantas Vezes a Senha Gerada Podera ser vista:</label><br>
+    <input type="text" name="name" placeholder="Insira um numero"><br><br>
+    <label for="">Prazo de validacao da senha (em horas):</label><br>
+    <input type="text" name="name" placeholder="Insira um numero"><br><br>
+    <button>Gerar Senha</button>
+  </form>
+{% endblock %}
